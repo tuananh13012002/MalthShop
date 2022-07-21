@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRevealLayout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    app:dragEdge="right"
+    app:mode="same_level"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Xóa"
+            android:background="#FB3939"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            >
+            <CheckBox
+                android:id="@+id/cbx_in_cart"
+                android:layout_width="37dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="" />
+            <LinearLayout
+                android:background="@color/white"
+                android:weightSum="5"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/img_product_in_cart"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="110dp"
+                    android:layout_weight="1.5"
+                    android:src="@drawable/bg_adv_1"
+                    android:scaleType="centerCrop"
+                    />
+                <LinearLayout
+                    android:weightSum="4"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="3.5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_name_product_in_cart"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center|left"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="Tên sản phẩm"
+                        android:textSize="21sp"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_type_product_in_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#2C2C2C"
+                        android:layout_gravity="center|left"
+                        android:text="Phân loại:"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_price_product_in_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center|left"
+                        android:text="30.000đ"
+                        android:textColor="#2C2C2C"
+                        android:gravity="center|left"
+                        android:textSize="18sp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/imb_decrease"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/bg_sl"
+                            android:src="@drawable/ic_baseline_horizontal_rule_24" />
+
+                        <TextView
+                            android:id="@+id/tv_quantity_in_cart"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/bg_sl"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/imb_increase"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/bg_sl"
+                            android:src="@drawable/ic_baseline_add_24" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

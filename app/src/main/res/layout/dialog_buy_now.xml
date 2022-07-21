@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_buy_now"
+    android:paddingBottom="20dp"
+    android:paddingLeft="5dp"
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+        <ImageView
+            android:id="@+id/img_dialog"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_banner_laptop1"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/txt_dialog_price"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="70000đ"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:gravity="center|left"
+            android:layout_marginLeft="25dp"
+            />
+        <ImageButton
+            android:id="@+id/imb_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_cancel_24"
+            android:background="@android:color/transparent"
+            />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D5D2D2"/>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số Lượng"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imb_decrease"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_sl"
+                android:src="@drawable/ic_baseline_horizontal_rule_24" />
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_sl"
+                android:gravity="center"
+                android:text="1" />
+
+            <ImageButton
+                android:id="@+id/imb_increase"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_sl"
+                android:src="@drawable/ic_baseline_add_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="255dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:text="Nếu mua nhiều hơn,số lượng hàng sẽ vượt quá số lượng mua tối đa cho phép, giá sản phẩm thay đổi."
+        android:textColor="#F44336"
+        android:textSize="14dp" />
+    <Button
+        android:id="@+id/btn_dialog_buy_now"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MUA NGAY"
+        android:layout_marginRight="5dp"
+        android:padding="15dp"
+        android:textSize="15sp"
+        android:backgroundTint="@color/color_button"
+        android:textColor="@color/white"
+        />
+</LinearLayout>
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="10dp"-->
+<!--android:orientation="horizontal">-->
+
+<!--<TextView-->
+<!--    android:layout_width="80dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:maxLines="2"-->
+<!--    android:text="Mã Giảm Giá Cúa Shop" />-->
+
+<!--<FrameLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="5dp">-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:src="@drawable/voucher" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Giảm 10 %"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="9dp" />-->
+<!--</FrameLayout>-->
+
+<!--<FrameLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginLeft="5dp">-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:src="@drawable/voucher" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="5dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Giảm 30 %"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="9dp" />-->
+<!--</FrameLayout>-->
+<!--</LinearLayout>-->
+<!--<LinearLayout-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_marginTop="10dp"-->
+<!--android:orientation="horizontal">-->
+
+<!--<TextView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Vận Chuyển " />-->
+
+<!--<ImageView-->
+<!--    android:layout_width="30dp"-->
+<!--    android:layout_height="20dp"-->
+<!--    android:src="@drawable/free_ship" />-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Miễn phí vận chuyển"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="13sp" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Miễn phí vận chuyển cho đơn hàng trên ₫300.000"-->
+<!--        android:textSize="10sp" />-->
+<!--</LinearLayout>-->
+<!--</LinearLayout>-->

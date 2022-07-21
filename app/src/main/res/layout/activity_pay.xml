@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="PayManager.PayActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_baseline_location_on_24" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:baselineAligned="false">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Địa chỉ nhận hàng"
+                            android:textSize="20sp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:id="@+id/tv_address_pay"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            />
+                    </LinearLayout>
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="@drawable/bg_letter"/>
+
+                <View style="@style/ViewMarginContent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_pay_product"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/item_pay_product"
+                            tools:itemCount="2"
+                            />
+
+                        <View
+                            android:id="@+id/view_none_product"
+                            style="@style/ViewMarginContent"
+                            android:layout_gravity="bottom"
+                            />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center|left"
+                            android:text="Malth Voucher"
+                            android:textColor="@color/black"
+                            android:drawableStart="@drawable/icon_voucher"
+                            android:drawablePadding="5dp"
+                            />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Chọn mã voucher"
+                            android:textSize="18sp"
+                            android:gravity="right|center"
+                            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#CFC7C7"/>
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center|left"
+                            android:text="Malth Coins"
+                            android:textColor="#7C7979"
+                            android:drawableStart="@drawable/icon_coins"
+                            android:drawablePadding="5dp"
+                            />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Đang cập nhật"
+                            android:textSize="18sp"
+                            android:paddingRight="10dp"
+                            android:gravity="right|center"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/ViewMarginContent"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:weightSum="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:gravity="center|left"
+                            android:text="Phương thức thanh toán"
+                            android:textColor="@color/black"
+                            android:drawableStart="@drawable/ic_baseline_monetization_on_24"
+                            android:drawablePadding="5dp"
+                            />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="Thanh toán khi nhận hàng"
+                            android:layout_gravity="center"
+                            android:textSize="19sp"
+                            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            android:gravity="right|center"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Thanh toán nhanh chóng hơn với Malth Pay"
+                        android:textColor="#04364E"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="15sp"
+                        android:background="@drawable/bg_textview_in_pay"
+                        />
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tổng tiền hàng"
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                />
+                            <TextView
+                                android:id="@+id/tv_total_product"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0đ"
+                                android:textSize="17sp"
+                                android:gravity="end|center"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tổng tiền phí vận chuyển"
+                                android:gravity="center"
+                                android:textSize="17sp"
+                                />
+                            <TextView
+                                android:id="@+id/tv_total_ship"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0đ"
+                                android:textSize="17sp"
+                                android:gravity="end|center"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tổng thanh toán"
+                                android:gravity="center"
+                                android:textSize="21sp"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:id="@+id/tv_total_all"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="0đ"
+                                android:textSize="21sp"
+                                android:textColor="@color/red"
+                                android:gravity="end|center"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View
+                    style="@style/ViewMarginContent"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="10dp"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+                <LinearLayout
+                    android:paddingRight="15dp"
+                    android:gravity="end"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:text="Tổng thanh toán"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                    <TextView
+                        android:id="@+id/tv_total_all_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0đ"
+                        android:textColor="@color/red"
+                        android:textSize="23sp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_buy"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:backgroundTint="@color/color_button"
+                    android:layout_marginTop="-10dp"
+                    android:layout_marginBottom="-10dp"
+                    android:text="Đặt hàng"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</LinearLayout>

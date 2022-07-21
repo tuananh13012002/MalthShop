@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    >
+    <LinearLayout
+        android:background="@color/color_pay_product"
+        android:weightSum="5"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_product_pay"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1.5"
+            android:src="@drawable/bg_adv_1"
+            android:scaleType="centerCrop"
+            />
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="3.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_name_pay_product"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Tên sản phẩm"
+                android:textSize="21sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_type_product"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#2C2C2C"
+                android:layout_gravity="center|left"
+                android:text="Phân loại:"
+                android:textSize="17sp" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/tv_price_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="30.000đ"
+                    android:textColor="#2C2C2C"
+                    android:gravity="center|left"
+                    android:textSize="21sp" />
+                <TextView
+                    android:id="@+id/tv_quantity_pay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="x1"
+                    android:gravity="end"
+                    android:layout_gravity="center|end"
+                    android:textSize="19sp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="1dp"
+        android:background="#CFC7C7"/>
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_pay_total_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tổng số tiền (x sản phẩm)"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30.000đ"
+            android:textSize="22sp"
+            android:textColor="@color/red"
+            android:gravity="center|end"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+    <View
+        style="@style/ViewMarginContent"/>
+</LinearLayout>

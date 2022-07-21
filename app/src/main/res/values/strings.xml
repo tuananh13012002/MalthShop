@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Malth Shop</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_phone">Điện thoại</string>
+    <string name="title_laptop">Máy tính</string>
+    <string name="title_account">Tôi</string>
+
+    <!--    Link pay-->
+    <string name="link_pay_malth">Voucher giảm 100k
+Liên kết Ví Malth Pay</string>
+    <string name="title_pay">Malth Pay</string>
+    <string name="title_coins">Malth Xu</string>
+    <string name="text_login">Đăng nhập để xem thông tin</string>
+
+
+    <!--    Hot Product-->
+    <string name="title_special_product">Sản phẩm nổi bật</string>
+    <string name="text_more">Xem thêm ></string>
+
+    <string name="text_bought">Đơn hàng của bạn đã vào trạng thái "Đang giao hàng".
+        Hãy vào "Đơn mua" để xem luôn nào</string>
+</resources>

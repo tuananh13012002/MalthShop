@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_dialog</item>
+    </style>
+
+    <style name="NoActionbar" parent="Theme.AppCompat.Light.NoActionBar" >
+        <item name = "android:windowActionBar">false</item>
+        <item name = "android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ViewMarginContent">
+        <item name="android:background">#EDEBEB</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="Theme.MatlhShop.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MalthShop.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

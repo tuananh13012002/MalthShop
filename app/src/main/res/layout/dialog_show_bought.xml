@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_bought"
+    >
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đang chờ thanh toán"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_baseline_error_outline_24"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/text_bought"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            android:backgroundTint="@color/color_button"
+            android:text="Trang chủ"
+            />
+        <Button
+            android:id="@+id/btn_purchase"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            android:backgroundTint="@color/color_button"
+            android:text="Đơn mua"
+            />
+
+    </LinearLayout>
+</LinearLayout>
